@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/filter.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <script type="module" src="main.js">
+      defer
+    </script>
+    <link
+      rel="icon"
+      href="https://assets.oneweb.mercedes-benz.com/plugin/hp-header/hp-header-0.11.0/logo.svg"
+      type="image/x-icon"
+    />
+    <title>Practica Dom</title>
+  </head>
+
+  <body>
+    <header>
+      <section class="NavBar">
+        <div class="menu">
+          <button>Modelos</button>
+          <button>Comprar</button>
+          <button>Servicios</button>
+          <button>Marca</button>
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <img
+          src="https://assets.oneweb.mercedes-benz.com/plugin/hp-header/hp-header-0.11.0/logo.svg"
+          alt="logo"
+          class="logo"
+        />
+
+        <div class="sesion">
+          <img src="images/lupa.jpg" alt="" />
+          <img src="images/user.jpg" alt="boton user" /><button>
+            Iniciar Sesion
+          </button>
+        </div>
+      </section>
+    </header>
+    <div class="types">
+      <h1>Nuestros modelos</h1>
+      <p>
+        Descubre nuestro diverso mundo de marcas y modelos: Aquí encontrarás tu
+        vehículo deseado.
+      </p>
+      <button>Mercedes</button>
+      <button>AMG</button>
+      <button>MAYBACH</button>
+    </div>
+
+    <div class="page">
+      <section class="filter">
+        <p>FILTROS</p>
+        <div id="filter-container">
+          <h4>Carrocerías</h4>
+          <button class="filter-btn" data-filter="all">Mostrar Todos</button>
+          <button class="filter-btn" data-filter="berlina">Berlina</button>
+          <button class="filter-btn" data-filter="suv">SUV</button>
+          <button class="filter-btn" data-filter="estate">Estate</button>
+          <button class="filter-btn" data-filter="compacto">Compacto</button>
+          <button class="filter-btn" data-filter="coupe">Coupé</button>
+          <button class="filter-btn" data-filter="cabrio">Cabrio</button>
+          <button class="filter-btn" data-filter="monovolumen">
+            Monovolumen
+          </button>
+
+          <h4>Tipo de combustible</h4>
+          <button class="filter-btn" data-filter="electrico">Eléctrico</button>
+          <button class="filter-btn" data-filter="hibrido-enchufable">
+            Híbrido enchufable
+          </button>
+        </div>
+      </section>
+
+      <section class="compra">
+        <article class="productos"></article>
+      </section>
+    </div>
+  </body>
+</html>
